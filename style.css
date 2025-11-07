@@ -1,0 +1,130 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #444;
+  background-color: #fff;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #e48c8c;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #666;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #e48c8c;
+}
+
+/* Hero section */
+.hero {
+  background-image: url("https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  padding: 8rem 2rem;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(228, 140, 140, 0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background-color: #a8d8c9;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #8ac7b3;
+}
+
+/* About section */
+.about {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #fef9f9;
+}
+
+.about h2 {
+  color: #e48c8c;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  max-width: 700px;
+  margin: auto;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  color: #888;
+  border-top: 1px solid #eee;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .hero {
+    padding: 6rem 1.5rem;
+  }
+
+  header nav a {
+    margin-left: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
